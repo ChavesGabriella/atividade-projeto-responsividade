@@ -7,16 +7,135 @@
 
 /*Fonte: Heebo*/
 
-*{
-  font-size: 16px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-header{
-  height: 10vh;
+.header{
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  /*text-transform: uppercase;*/
 }
 
-@media (max-width: 992px){
-  header{
-      height: 100%;
-  }
+.header nav{
+  display: flex;
+  gap: 40px;
+}
+
+
+.header nav a{
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.main{
+  display: flex;
+  background-color: var(--light);
+  width: 100%;
+  padding: 30px;
+  height: 700px;
+}
+
+.main-titulo{
+  font-size: 30px;
+  font-weight: bold;
+  width: 50%;
+  text-align: left;
+  /*margin-left: 20px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--dark);
+  gap: 10px;
+}
+
+.main-titulo{
+  width: 50%;
+  margin-left: 50px;
+}
+
+.main-titulo p{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.main-button1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary);
+  background-color: var(--primary);
+  border-radius: 5px;
+  color: var(--light);
+  display: inline-block;
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+}
+
+.main-img{
+  max-width: 100%;
+  width: 50%;
+  position: relative;
+}
+
+.img-principal{
+  position: absolute;
+}
+
+.one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  gap: 30px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+.one h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.one p{
+  font-size: 20px;
+  text-align: center;
+  max-width: 1400px;
+}
+
+.cards{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+
+.card{
+  width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card h2{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.card p{
+  font-size: 18px;
 }
