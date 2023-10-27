@@ -5,8 +5,6 @@
   --dark: #0e2e50;
 }
 
-/*Fonte: Heebo*/
-
 
 * {
   margin: 0;
@@ -16,42 +14,40 @@
   list-style: none;
 }
 
-.header{
+.header {
   background-color: var(--secondary);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px;
   font-size: 40px;
-  /*text-transform: uppercase;*/
 }
 
-.header nav{
+.header nav {
   display: flex;
   gap: 40px;
 }
 
 
-.header nav a{
+.header nav a {
   color: var(--dark);
   font-weight: 600;
   font-size: 20px;
 }
 
-.main{
+.main {
   display: flex;
-  background-color: var(--secondary);
+  background-color: var(--light);
   width: 100%;
   padding: 30px;
   height: 700px;
 }
 
-.main-titulo{
+.main-titulo {
   font-size: 30px;
   font-weight: bold;
   width: 50%;
   text-align: left;
-  /*margin-left: 20px;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,17 +55,17 @@
   gap: 10px;
 }
 
-.main-titulo{
+.main-titulo {
   width: 50%;
   margin-left: 50px;
 }
 
-.main-titulo p{
+.main-titulo p {
   font-size: 20px;
   font-weight: normal;
 }
 
-.main-button1{
+.main-button1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +79,11 @@
   height: 50px;
 }
 
-.img-principal{
+.main-img{
+  position: relative;
+}
+
+.img-principal {
   height: 672px;
   width: 720px;
   position: absolute;
@@ -97,7 +97,7 @@
   font-size: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   margin-top: 50px;
   text-align: center;
   color: var(--dark);
@@ -108,6 +108,7 @@
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  gap: 20px;
 }
 
 .section-one {
@@ -168,7 +169,7 @@
   background-color: var(--light-gray);
 }
 
-.card-houses {
+.card-vendas {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,6 +177,7 @@
   gap: 8px;
   background-color: white;
   border-radius: 1%;
+  box-shadow: 3 3 0 0px white;
 }
 
 .sec-two-card h4 {
@@ -183,7 +185,7 @@
   font-weight: 400;
 }
 
-.card-houses figure img {
+.card-vendas figure img {
   width: 350px;
   height: 300px;
   border-top-left-radius: 1%;
@@ -196,12 +198,12 @@
   justify-content: flex-start;
   font-size: 1rem;
   margin-right: 75px;
-  margin-bottom: 20px ;
-  gap: 8px;
+  margin-bottom: 20px;
+  gap: 10px;
 }
 
 .sec-two-botao {
-  background-color: var(--light-gray); 
+  background-color: var(--light-gray);
 }
 
 .sec-botao {
@@ -270,7 +272,7 @@
   display: flex;
   flex-direction: column;
   gap: 2%;
-  
+
 }
 
 .footer-links h2 {
@@ -288,8 +290,10 @@
 
 .footer-botao-flecha figure img {
   max-width: 50px;
-  position: absolute; /* Define a imagem como uma posição absoluta */
-  bottom: 50px; /* Define a distância do fundo do contêiner para 0 (ou seja, a parte inferior) */
+  position: absolute;
+  /* Define a imagem como uma posição absoluta */
+  bottom: 50px;
+  /* Define a distância do fundo do contêiner para 0 (ou seja, a parte inferior) */
   left: 130px;
 }
 
@@ -299,7 +303,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  
+
 }
 
 .form {
@@ -312,7 +316,7 @@
 
 #Mensagem {
   border: 1px solid #ccc;
-  border-radius: 5px; 
+  border-radius: 5px;
   padding: 10px;
   width: 100%;
   height: 200px;
@@ -327,11 +331,11 @@ input {
   border-radius: 5px;
 }
 
-.three{
+.three {
   display: flex;
   flex-direction: column;
   padding-bottom: 8%;
-  }
+}
 
 .form-botoes input[type="submit"] {
   background-color: var(--primary);
@@ -347,18 +351,18 @@ input {
   gap: 15px;
 }
 
-.form-col1{
+.form-col1 {
   display: flex;
   gap: 15px;
   width: 800px;
 }
 
-.form-col2{
+.form-col2 {
   display: flex;
   gap: 15px;
 }
 
-.form-col3{
+.form-col3 {
   display: flex;
   flex-direction: column;
   gap: 15px;
